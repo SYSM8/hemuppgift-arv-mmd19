@@ -11,7 +11,7 @@ namespace Hemuppgift_Arv_Temp.Game
         Random random = new Random(); //Skapar ett random obj för att generera slumpmässiga tal
 
         //Konstruktor
-        public ComputerPlayer(string userId) : base(userId)
+        public ComputerPlayer(string UserId) : base(UserId)
         {
 
         }
@@ -26,13 +26,13 @@ namespace Hemuppgift_Arv_Temp.Game
             if(NoPins == 1)
             {
                 taken = 1;
-                Console.WriteLine($"Datorn tar {taken} sticka");
+                Console.WriteLine($"Siri tar {taken} sticka");
             }
            
             else
             {
                 taken=random.Next(1, Math.Min(3,NoPins+1));
-                Console.WriteLine($"Datorn tar {taken} sticka");
+                Console.WriteLine($"Siri tar {taken} stickor");
             }
 
             board.TakePins(taken);

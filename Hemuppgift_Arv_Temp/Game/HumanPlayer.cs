@@ -32,7 +32,12 @@ namespace Hemuppgift_Arv_Temp.Game
                     }
                     else if (taken > board.GetNoPins())
                     {
-                        Console.WriteLine($"Det finns inte tillräckligt med stickor. Kvartsående:{board.GetNoPins()}");
+                        Console.WriteLine($"Det finns inte tillräckligt med stickor. Kvarvarande:{board.GetNoPins()}");
+                    }
+                    else
+                    {
+                        validInput = true;
+                       
                     }
                 }
                 catch (FormatException)
